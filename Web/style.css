@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@600&family=Inter:wght@300;400&family=Poppins&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+header{
+    width: 100%;
+    background-color: rgba(23,23,23,0.15);
+    padding: 20px;
+    position: absolute;
+    top: 0;
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+    width: 1285px;
+    margin: auto;
+
+
+
+
+
+}
+
+
+header a{
+    text-decoration: none;
+    margin-right: 100px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: rgba(34, 31, 31, 0.719);
+    font-family: Tahoma;
+    font-weight: 500;
+}
+
+
+
+.banner-container{
+   
+    width: 100%;
+    height: 656px;
+    background-image: url(./images/bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    display: inline-flex;
+    align-items: center;
+}
+
+/* .main-content {
+    display: inline-flex;
+    width:100%;
+    height: 656px;
+
+    background-image: url('./images/bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: sticky;
+    grid-template-columns: repeat(auto-fit, minmax(640px, 1fr));
+} */
+
+.left-section{
+    width: 600px;
+    align-self: flex-start;
+}
+
+.left-section h1{
+    margin: 0;
+    color: rgba(14, 13, 13, 0.697);
+    font-size: 40px;
+    font-family: Inconsolata;
+    font-weight: bold;
+}
+
+.banner-container .container{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+}
+
+.left-section p{
+    margin: 0;
+    font-size: var(--font-size-14);
+    letter-spacing: 1px;
+    margin-top: 15px;
+    line-height: 20px;
+    font-family: Poppins;
+    
+    
+}
+
+.left-section button{
+    color: white;
+    background-color:#8ec4e6;
+    border: none;
+    padding: 12px 50px;
+    border-radius: 6px;
+    margin-top: 15px;
+    cursor: pointer;
+
+
+}
+
+/* 
+<--------Right Section ------> */
+
+
+.right-section{
+    width: 400px;
+    background-color: white;
+    border-radius: 15px;
+    padding: 40px 0;
+    box-shadow: 0 5x 6px rgba(0,0,0, 0.26);
+}
+
+.right-section h4{
+    font-size: 20px;
+    width: 300px;
+    margin: auto;
+    margin-bottom: 30px;
+    color: rgb(136, 136, 136);
+}
+
+.input-group{
+    width: 300px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.input-group label{
+    color: rgb(165, 165, 165);
+    font-size: var(--font-size-14);
+    position: absolute;
+    top: 10px;
+    transition: 0.5s ease-in-out;
+}
+.input-group input{
+    border:none;
+    padding: 7px;
+    margin-top: 7px;
+    margin-top: 5px;
+    outline: none;
+    color: #6ca4d0;
+    border-bottom: 1px solid #c9c9c98a;;
+}
+
+.input-group input:focus ~ label ,
+.input-group input:valid ~ label {
+    color: #6ca4d0;
+    top: -10px;
+    font-size: 12px;
+}
+
+.input-group input:focus,
+.input-group input:valid {
+   border-color: #6ca4d0;
+}
+
+.submit-section{
+    text-align: center;
+}
+
+.submit-button{
+    background-color: #8ec4e6;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 5px;
+    width: 300px;
+    
+}
+
+.submit-button:hover{
+    box-shadow: 0 3px 6px silver;
+}
+
+/* Section Two */
+
+.section-two{
+    display: flex;
+    justify-content: space-evenly;
+    height: 100vh;
+    align-items: center;
+}
+
+.image-container{
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+}
+
+.image-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 15s ease-in-out;
+}
+
+.card-container h1{
+    color: rgb(136,136,136);
+
+}
+
+.card-container{
+    width: 350px;
+    border-radius: 15px;
+    box-shadow: 10px 5px 26px rgb(57, 56, 56);
+    overflow: hidden;
+    text-align: center;
+}
+
+
+.image-container:hover{
+    transform: scale(1.1) rotate(-5deg); 
+}
+
+/* Section Two End */
+
+
+footer{
+    text-align: center;
+    color:grey;
+    padding: 15px;
+}
+
+footer span a{
+    color: var(--primary-color);
+    font-weight: bold;
+    text-decoration: none;
+}
+
